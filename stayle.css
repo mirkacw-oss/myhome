@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-box {
+  width: 100%;
+  background: #fff;
+}
+
+.top-box {
+  height: 48px;
+  background: #f8f8f8;
+}
+
+.top-box .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-box img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.phone-box {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.phone-box span {
+  display: block;
+  color: orange;
+  font-size: 10px;
+}
+
+.search-box {
+  width: 150px;
+  height: 24px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 10px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  color: #8c7563;
+}
+
+.nav-box .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: #222;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.nav-box a:first-child {
+  color: #f5a623;
+}
+
+.banner-box {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #c89b53;
+}
+
+.banner-bg-box {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-box .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text-box {
+  width: 42%;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.banner-text-box h1 {
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.banner-text-box p {
+  max-width: 350px;
+  font-size: 9px;
+  line-height: 15px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.banner-text-box button {
+  border: none;
+  background: #ffa51f;
+  color: white;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner-image-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56%;
+  height: 100%;
+}
+
+.banner-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider-box {
+  position: absolute;
+  bottom: 13px;
+  left: max(calc((100% - 1160px) / 2), 20px);
+  display: flex;
+  gap: 4px;
+  z-index: 3;
+}
+
+.slider-box span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.slider-box span:first-child {
+  background: white;
+}
+
+.category-box {
+  width: 100%;
+  padding: 0 12px;
+  margin-top: 40px;
+}
+
+.category-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px 16px;
+}
+
+.category-item-box {
+  height: 73px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category-item-box:hover {
+  background: #ededed;
+}
+
+.category-img-box {
+  width: 42%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.category-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-item-box h3 {
+  flex: 1;
+  padding: 0 5px;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.advantages-box {
+  width: 100%;
+  padding: 12px 25px 30px;
+}
+
+.advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 25px;
+  row-gap: 55px;
+}
+
+.advantage-item-box {
+  min-width: 0;
+}
+
+.advantage-img-box {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.advantage-img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.advantage-item-box h3 {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.advantage-item-box p {
+  color: #999;
+  font-size: 9px;
+  line-height: 17px;
+  font-weight: 400;
+}

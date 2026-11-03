@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b0800;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #200900, #140500);
+  padding: 22px 8%;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ff8a00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 38px;
+}
+
+.menu a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menu a.active {
+  color: #ff9000;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login {
+  width: 105px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff9d00, #ff5525);
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.left {
+  width: 50%;
+}
+
+.left h1 {
+  font-size: 43px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.left p {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.process {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 35px;
+}
+
+.order {
+  width: 145px;
+  height: 42px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff5128, #ff9411);
+  color: white;
+  cursor: pointer;
+}
+
+.pizza-menu {
+  width: 110px;
+  height: 42px;
+  border: 1px solid #ff8a00;
+  border-radius: 0 25px 25px 0;
+  background: transparent;
+  color: #ff9a00;
+  cursor: pointer;
+}
+
+.right-side {
+  width: 48%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.food {
+  width: 390px;
+  height: 460px;
+  border-radius: 25px;
+}
+.img_food {
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 20px 5%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .left,
+  .right-side {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 35px;
+  }
+
+  .food {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.section2 {
+  background: #1b0902;
+  padding: 30px 8%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.section2 h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.section2-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.section2-tabs button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.section2-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.section2-card {
+  width: 23%;
+  text-align: center;
+}
+
+.section2-img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 75px;
+  padding: 12px 24px;
+}
+
+.section2-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.section2-card p {
+  font-size: 10px;
+  color: #999;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.section2-sizes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.section2-sizes span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.section2-sizes .active {
+  background: #ff791b;
+  border-color: #ff791b;
+}
+
+.section2-ingredients {
+  width: 80%;
+  padding: 7px;
+  border: 1px solid #ff8a00;
+  border-radius: 20px;
+  background: transparent;
+  color: #ff9900;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.section2-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.section2-price span {
+  font-size: 11px;
+}
+
+.section2-order {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ffa51b, #ff5125);
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .section2-cards {
+    flex-wrap: wrap;
+  }
+
+  .section2-card {
+    width: 45%;
+  }
+
+  .section2-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
